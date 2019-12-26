@@ -1,8 +1,7 @@
 {
   "short_name": "Nate's Personal Website",
   "name": "Nate's Personal Website",
-  "icons": [
-  ],
+  "icons": [],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
