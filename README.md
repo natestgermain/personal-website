@@ -1,6 +1,6 @@
 ## Personal Website
 
-My personal website for career, showcasing projects, and anything else that I think fits :-)
+My personal website for career, showcasing projects, and anything else that fits. :-)
 
 ---
 
