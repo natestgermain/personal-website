@@ -1,5 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Personal Website
 
-# Personal Website
+My personal website for career, showcasing projects, and anything else that I think fits :-)
 
-Nate St. Germain's personal website for career, projects, etc.
+--
+
+Built with React (bootstrapped with [Create React App](https://github.com/facebook/create-react-app))
