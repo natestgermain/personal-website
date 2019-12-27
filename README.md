@@ -17,3 +17,4 @@ Built with React (bootstrapped with [Create React App](https://github.com/facebo
 ### Run locally
 
 `yarn dev` or `npm run dev`
+Once above command is finished, go to `http://localhost:3000/` in your browser (unless you've set this up differently).
