@@ -4,16 +4,16 @@ My personal website for career, showcasing projects, and anything else that fits
 
 ---
 
-Built with React (bootstrapped with [Create React App](https://github.com/facebook/create-react-app))
+Built with React (bootstrapped with [Create React App](https://github.com/facebook/create-react-app)).
 
 ### Setup
 
-`yarn install`
+`yarn install` or `npm install`
 
 ### Build
 
-`yarn build`
+`yarn build` or `npm run build`
 
 ### Run locally
 
-`yarn dev`
+`yarn dev` or `npm run dev`
