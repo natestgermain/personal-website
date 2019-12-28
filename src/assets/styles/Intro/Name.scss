@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap");
 @import "../colors";
 
+$font-family: "Bowlby One SC", cursive;
+
 $first-name-font-size: 90px;
 $last-name-font-size: 60px;
 $first-name-font-color: $global--color-text;
@@ -10,7 +12,7 @@ $slide-start: -100%;
 $slide-end: 0%;
 
 .name {
-  font-family: "Bowlby One SC", cursive;
+  font-family: $font-family;
   overflow-x: hidden;
 
   .sliding-names {
