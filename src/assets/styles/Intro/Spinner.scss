@@ -1,0 +1,46 @@
+@import "../colors";
+
+$deg-start: -45deg;
+$deg-end: 180deg;
+$diameter-start: 0px;
+$diameter-end: 170px;
+$radius-start: 50%;
+$radius-end: 10%;
+$border-width-start: 0px;
+$border-width-end: 20px;
+$border-color: $global--color-highlight-bright;
+$initial-spin-duration: 0.85s;
+
+.spinner {
+  &-appear {
+    width: $diameter-start;
+    height: $diameter-start;
+    border-radius: $radius-start;
+    border: $border-width-start solid #fff;
+    border-color: $border-color;
+    transform: rotate($deg-start);
+  }
+
+  &-appear-active {
+    width: $diameter-end;
+    height: $diameter-end;
+    border-radius: $radius-end;
+    border: $border-width-end solid #fff;
+    border-color: $border-color;
+    transform: rotate($deg-end);
+
+    transition-property: transform, border, border-radius, width, height;
+    transition-timing-function: ease-in-out;
+    transition-duration: $initial-spin-duration;
+  }
+
+  &-appear-done {
+    width: $diameter-end;
+    height: $diameter-end;
+    border-radius: $radius-end;
+    border: $border-width-end solid #fff;
+    border-color: $border-color;
+    transform: rotate($deg-end);
+    transform: rotate($deg-end);
+  }
+}
