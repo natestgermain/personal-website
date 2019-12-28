@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap");
+@import "../colors";
+
+$first-name-font-size: 90px;
+$last-name-font-size: 60px;
+$first-name-font-color: $global--color-text;
+$last-name-font-color-normal: $global--color-text;
+$last-name-font-color-highlight: $global--color-highlight-bright;
+$slide-start: -100%;
+$slide-end: 0%;
+
+.name {
+  font-family: "Bowlby One SC", cursive;
+  overflow-x: hidden;
+
+  .sliding-names {
+    &-appear {
+      margin-left: $slide-start;
+    }
+
+    &-appear-done {
+      margin-left: $slide-end;
+      transition-delay: 100ms;
+      transition-property: margin-left;
+      transition-duration: 400ms;
+    }
+  }
+
+  .first-name {
+    font-size: $first-name-font-size;
+    color: $first-name-font-color;
+  }
+
+  .last-name {
+    font-size: $last-name-font-size;
+    color: $last-name-font-color-normal;
+  }
+}
