@@ -2,7 +2,7 @@
 
 $deg-start: -45deg;
 $deg-end: 180deg;
-$diameter-start: 0px;
+$diameter-start: 10px;
 $diameter-end: 170px;
 $radius-start: 50%;
 $radius-end: 10%;
@@ -12,16 +12,29 @@ $border-color: $global--color-highlight-bright;
 $initial-spin-duration: 0.85s;
 
 .spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &-appear {
+    background: $border-color;
     width: $diameter-start;
     height: $diameter-start;
     border-radius: $radius-start;
     border: $border-width-start solid #fff;
     border-color: $border-color;
     transform: rotate($deg-start);
+
+    .closeup {
+      height: $diameter-start;
+      width: $diameter-start;
+      transform: rotate($deg-end);
+      border-radius: 50%;
+    }
   }
 
   &-appear-active {
+    background: $border-color;
     width: $diameter-end;
     height: $diameter-end;
     border-radius: $radius-end;
@@ -32,9 +45,21 @@ $initial-spin-duration: 0.85s;
     transition-property: transform, border, border-radius, width, height;
     transition-timing-function: ease-in-out;
     transition-duration: $initial-spin-duration;
+
+    .closeup {
+      height: $diameter-end;
+      width: $diameter-end;
+      transform: rotate($deg-end);
+      border-radius: 50%;
+
+      transition-property: height, width;
+      transition-timing-function: ease-in-out;
+      transition-duration: $initial-spin-duration;
+    }
   }
 
   &-appear-done {
+    background: $border-color;
     width: $diameter-end;
     height: $diameter-end;
     border-radius: $radius-end;
@@ -42,5 +67,12 @@ $initial-spin-duration: 0.85s;
     border-color: $border-color;
     transform: rotate($deg-end);
     transform: rotate($deg-end);
+
+    .closeup {
+      height: $diameter-end;
+      width: $diameter-end;
+      transform: rotate($deg-end);
+      border-radius: 50%;
+    }
   }
 }
