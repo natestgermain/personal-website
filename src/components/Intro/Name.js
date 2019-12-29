@@ -9,7 +9,7 @@ const Name = () => {
       <CSSTransition appear classNames="sliding-names" in timeout={800}>
         <div>
           <div className="first-name">NATE</div>
-          <div className="last-name">st. germain</div>
+          <div className="last-name">ST. GERMAIN</div>
         </div>
       </CSSTransition>
     </div>

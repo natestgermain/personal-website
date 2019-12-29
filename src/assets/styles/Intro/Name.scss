@@ -1,18 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
 @import "../colors";
 
-$font-family: "Bowlby One SC", cursive;
+$font-family: "Ubuntu", sans-serif;
+$font-weight: bold;
 
 $first-name-font-size: 90px;
 $last-name-font-size: 60px;
 $first-name-font-color: $global--color-text;
-$last-name-font-color-normal: $global--color-text;
+$last-name-font-color-normal: $global--color-highlight-neutral-darker;
 $last-name-font-color-highlight: $global--color-highlight-bright;
 $slide-start: -100%;
 $slide-end: 0%;
 
+$transition-duration: 400ms;
+$transition-delay: 100ms;
+
 .name {
   font-family: $font-family;
+  font-weight: $font-weight;
   overflow-x: hidden;
 
   .sliding-names {
@@ -22,9 +27,9 @@ $slide-end: 0%;
 
     &-appear-done {
       margin-left: $slide-end;
-      transition-delay: 100ms;
+      transition-delay: $transition-delay;
       transition-property: margin-left;
-      transition-duration: 400ms;
+      transition-duration: $transition-duration;
     }
   }
 
