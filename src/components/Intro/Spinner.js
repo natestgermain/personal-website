@@ -1,7 +1,7 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
 
-import CloseupSquare from "../../assets/images/closeup-square.jpg";
+import CloseupSquare from "../../assets/images/closeup-square.JPG";
 
 import "../../assets/styles/Intro/Spinner.scss";
 
