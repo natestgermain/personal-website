@@ -5,7 +5,11 @@ import Intro from "./Intro";
 import "../assets/styles/App.scss";
 
 const App = () => {
-  return <Intro />;
+  return (
+    <div className="personal-website">
+      <Intro />
+    </div>
+  );
   // return (
   //   <>
   //     <Intro />
