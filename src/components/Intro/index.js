@@ -9,7 +9,7 @@ import "../../assets/styles/Intro/Intro.scss";
 
 const Intro = () => (
   <div className="intro">
-    <Particles className="intro__particles" params={particleSettings} />
+    <Particles className="intro__particles" params={particleParams} />
 
     <Spinner />
     <CSSTransition appear classNames="intro__vertical-divider" in timeout={600}>
@@ -19,7 +19,7 @@ const Intro = () => (
   </div>
 );
 
-const particleSettings = {
+const particleParams = {
   particles: {
     number: {
       value: 20
@@ -38,7 +38,7 @@ const particleSettings = {
       }
     },
     opacity: {
-      value: 0.1,
+      value: 0.2,
       random: true
     },
     size: {
@@ -48,7 +48,7 @@ const particleSettings = {
       enable: true,
       distance: 170,
       color: "#102542",
-      opacity: 0.2,
+      opacity: 0.3,
       width: 1
     },
     move: {
