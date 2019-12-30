@@ -1,6 +1,11 @@
 @import "../colors";
 @import "./breakpoints";
 
+$intro-height: 90vh;
+$particles-bottom-displacement: 100vh - $intro-height;
+$particles-background-color: $global--color-background;
+$bottom-border: 1px solid $global--color-text;
+
 $vertical-divider-height-start: 0px;
 $vertical-divider-height-end: 200px;
 $vertical-divider-width: 2px;
@@ -15,18 +20,20 @@ $vertical-divider-height-end-bp-two: 105px;
 $vertical-divider-height-end-bp-three: 80px;
 
 .intro {
-  height: 100vh;
+  height: $intro-height;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: $bottom-border;
 
   &__particles {
     position: absolute;
     z-index: -1;
+    background-color: $particles-background-color;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: $particles-bottom-displacement;
     top: 0;
   }
 
