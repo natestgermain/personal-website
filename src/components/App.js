@@ -8,14 +8,9 @@ const App = () => {
   return (
     <div className="personal-website">
       <Intro />
+      {/* <Resume /> */}
     </div>
   );
-  // return (
-  //   <>
-  //     <Intro />
-  //     <Website />
-  //   </>
-  // );
 };
 
 export default App;
