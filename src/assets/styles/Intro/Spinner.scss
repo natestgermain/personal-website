@@ -1,4 +1,5 @@
 @import "../colors";
+@import "./breakpoints";
 
 $deg-start: -45deg;
 $deg-end: 180deg;
@@ -10,6 +11,13 @@ $border-width-start: 0px;
 $border-width-end: 20px;
 $border-color: $global--color-highlight-bright;
 $initial-spin-duration: 0.85s;
+
+$diameter-start-bp-one: 100px;
+$diameter-end-bp-one: 100px;
+$diameter-start-bp-two: 80px;
+$diameter-end-bp-two: 80px;
+$diameter-start-bp-three: 60px;
+$diameter-end-bp-three: 60px;
 
 .spinner {
   display: flex;
@@ -71,6 +79,81 @@ $initial-spin-duration: 0.85s;
       width: $diameter-end;
       transform: rotate($deg-end);
       border-radius: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: $intro-breakpoint-one) {
+  .spinner {
+    &-appear {
+      width: $diameter-start-bp-one;
+      height: $diameter-start-bp-one;
+
+      .closeup {
+        height: $diameter-start-bp-one;
+        width: $diameter-start-bp-one;
+      }
+    }
+
+    &-appear-active,
+    &-appear-done {
+      width: $diameter-end-bp-one;
+      height: $diameter-end-bp-one;
+
+      .closeup {
+        height: $diameter-end-bp-one;
+        width: $diameter-end-bp-one;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $intro-breakpoint-two) {
+  .spinner {
+    &-appear {
+      width: $diameter-start-bp-two;
+      height: $diameter-start-bp-two;
+
+      .closeup {
+        height: $diameter-start-bp-two;
+        width: $diameter-start-bp-two;
+      }
+    }
+
+    &-appear-active,
+    &-appear-done {
+      width: $diameter-end-bp-two;
+      height: $diameter-end-bp-two;
+
+      .closeup {
+        height: $diameter-end-bp-two;
+        width: $diameter-end-bp-two;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $intro-breakpoint-three) {
+  .spinner {
+    &-appear {
+      width: $diameter-start-bp-three;
+      height: $diameter-start-bp-three;
+
+      .closeup {
+        height: $diameter-start-bp-three;
+        width: $diameter-start-bp-three;
+      }
+    }
+
+    &-appear-active,
+    &-appear-done {
+      width: $diameter-end-bp-three;
+      height: $diameter-end-bp-three;
+
+      .closeup {
+        height: $diameter-end-bp-three;
+        width: $diameter-end-bp-three;
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
 @import "../colors";
+@import "./breakpoints";
 
 $vertical-divider-height-start: 0px;
 $vertical-divider-height-end: 200px;
@@ -9,8 +10,12 @@ $vertical-divider-color: $global--color-text;
 $vertical-divider-delay: 300ms;
 $vertical-divider-duration: 300ms;
 
+$vertical-divider-height-end-bp-one: 125px;
+$vertical-divider-height-end-bp-two: 105px;
+$vertical-divider-height-end-bp-three: 80px;
+
 .intro {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -44,6 +49,36 @@ $vertical-divider-duration: 300ms;
       transition-property: height;
       transition-delay: $vertical-divider-delay;
       transition-duration: $vertical-divider-duration;
+    }
+  }
+}
+
+@media only screen and (max-width: $intro-breakpoint-one) {
+  .intro {
+    &__vertical-divider {
+      &-appear-done {
+        height: $vertical-divider-height-end-bp-one;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $intro-breakpoint-two) {
+  .intro {
+    &__vertical-divider {
+      &-appear-done {
+        height: $vertical-divider-height-end-bp-two;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $intro-breakpoint-three) {
+  .intro {
+    &__vertical-divider {
+      &-appear-done {
+        height: $vertical-divider-height-end-bp-three;
+      }
     }
   }
 }

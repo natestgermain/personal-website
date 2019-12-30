@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
 @import "../colors";
+@import "./breakpoints";
 
 $font-family: "Ubuntu", sans-serif;
 $font-weight: bold;
@@ -14,6 +15,13 @@ $slide-end: 0%;
 
 $transition-duration: 400ms;
 $transition-delay: 100ms;
+
+$first-name-font-size-bp-one: 65px;
+$last-name-font-size-bp-one: 40px;
+$first-name-font-size-bp-two: 50px;
+$last-name-font-size-bp-two: 30px;
+$first-name-font-size-bp-three: 35px;
+$last-name-font-size-bp-three: 20px;
 
 .name {
   font-family: $font-family;
@@ -41,5 +49,41 @@ $transition-delay: 100ms;
   .last-name {
     font-size: $last-name-font-size;
     color: $last-name-font-color-normal;
+  }
+}
+
+@media only screen and (max-width: $intro-breakpoint-one) {
+  .name {
+    .first-name {
+      font-size: $first-name-font-size-bp-one;
+    }
+
+    .last-name {
+      font-size: $last-name-font-size-bp-one;
+    }
+  }
+}
+
+@media only screen and (max-width: $intro-breakpoint-two) {
+  .name {
+    .first-name {
+      font-size: $first-name-font-size-bp-two;
+    }
+
+    .last-name {
+      font-size: $last-name-font-size-bp-two;
+    }
+  }
+}
+
+@media only screen and (max-width: $intro-breakpoint-three) {
+  .name {
+    .first-name {
+      font-size: $first-name-font-size-bp-three;
+    }
+
+    .last-name {
+      font-size: $last-name-font-size-bp-three;
+    }
   }
 }
