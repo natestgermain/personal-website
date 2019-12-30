@@ -1,8 +1,8 @@
 @import "../colors";
 @import "./breakpoints";
 
-$intro-height: 90vh;
-$particles-bottom-displacement: 100vh - $intro-height;
+$intro-height: 90%;
+$particles-bottom-displacement: 100% - $intro-height;
 $particles-background-color: $global--color-background;
 $bottom-border: 1px solid $global--color-text;
 
