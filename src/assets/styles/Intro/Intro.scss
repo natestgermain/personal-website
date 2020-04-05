@@ -22,6 +22,7 @@ $vertical-divider-height-end-bp-three: 80px;
   height: $intro-height;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -35,34 +36,43 @@ $vertical-divider-height-end-bp-three: 80px;
     top: 0;
   }
 
-  &__vertical-divider {
-    &-appear {
-      height: $vertical-divider-height-start;
-      width: $vertical-divider-width;
-      margin-left: $vertical-divider-margin-left;
-      margin-right: $vertical-divider-margin-right;
-      background: $vertical-divider-color;
-    }
+  &__photo-name-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
 
-    &-appear-done {
-      height: $vertical-divider-height-end;
-      width: $vertical-divider-width;
-      margin-left: $vertical-divider-margin-left;
-      margin-right: $vertical-divider-margin-right;
-      background: $vertical-divider-color;
+    &__vertical-divider {
+      &-appear {
+        height: $vertical-divider-height-start;
+        width: $vertical-divider-width;
+        margin-left: $vertical-divider-margin-left;
+        margin-right: $vertical-divider-margin-right;
+        background: $vertical-divider-color;
+      }
 
-      transition-property: height;
-      transition-delay: $vertical-divider-delay;
-      transition-duration: $vertical-divider-duration;
+      &-appear-done {
+        height: $vertical-divider-height-end;
+        width: $vertical-divider-width;
+        margin-left: $vertical-divider-margin-left;
+        margin-right: $vertical-divider-margin-right;
+        background: $vertical-divider-color;
+
+        transition-property: height;
+        transition-delay: $vertical-divider-delay;
+        transition-duration: $vertical-divider-duration;
+      }
     }
   }
 }
 
 @media only screen and (max-width: $intro-breakpoint-one) {
   .intro {
-    &__vertical-divider {
-      &-appear-done {
-        height: $vertical-divider-height-end-bp-one;
+    &__photo-name-section {
+      &__vertical-divider {
+        &-appear-done {
+          height: $vertical-divider-height-end-bp-one;
+        }
       }
     }
   }
@@ -70,9 +80,11 @@ $vertical-divider-height-end-bp-three: 80px;
 
 @media only screen and (max-width: $intro-breakpoint-two) {
   .intro {
-    &__vertical-divider {
-      &-appear-done {
-        height: $vertical-divider-height-end-bp-two;
+    &__photo-name-section {
+      &__vertical-divider {
+        &-appear-done {
+          height: $vertical-divider-height-end-bp-two;
+        }
       }
     }
   }
@@ -80,9 +92,11 @@ $vertical-divider-height-end-bp-three: 80px;
 
 @media only screen and (max-width: $intro-breakpoint-three) {
   .intro {
-    &__vertical-divider {
-      &-appear-done {
-        height: $vertical-divider-height-end-bp-three;
+    &__photo-name-section {
+      &__vertical-divider {
+        &-appear-done {
+          height: $vertical-divider-height-end-bp-three;
+        }
       }
     }
   }

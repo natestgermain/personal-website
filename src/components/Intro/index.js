@@ -2,8 +2,9 @@ import React from "react";
 import { CSSTransition } from "react-transition-group";
 import Particles from "react-particles-js";
 
-import Spinner from "./Spinner";
+import Connect from "./Connect";
 import Name from "./Name";
+import Spinner from "./Spinner";
 
 import "../../assets/styles/Intro/Intro.scss";
 
@@ -11,11 +12,20 @@ const Intro = () => (
   <div className="intro">
     <Particles className="intro__particles" params={particleParams} />
 
-    <Spinner />
-    <CSSTransition appear classNames="intro__vertical-divider" in timeout={600}>
-      <div />
-    </CSSTransition>
-    <Name />
+    <div className="intro__photo-name-section">
+      <Spinner />
+      <CSSTransition
+        appear
+        classNames="intro__photo-name-section__vertical-divider"
+        in
+        timeout={600}
+      >
+        <div />
+      </CSSTransition>
+      <Name />
+    </div>
+
+    <Connect />
   </div>
 );
 
