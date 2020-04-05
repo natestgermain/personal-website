@@ -1,10 +1,9 @@
 @import "../colors";
 @import "./breakpoints";
 
-$intro-height: 90%;
+$intro-height: 100%;
 $particles-bottom-displacement: 100% - $intro-height;
 $particles-background-color: $global--color-background;
-$bottom-border: 1px solid $global--color-text;
 
 $vertical-divider-height-start: 0px;
 $vertical-divider-height-end: 200px;
@@ -25,7 +24,6 @@ $vertical-divider-height-end-bp-three: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: $bottom-border;
 
   &__particles {
     position: absolute;
