@@ -19,4 +19,18 @@
   a:last-child {
     margin-right: 0;
   }
+
+  &__icons {
+    &-appear {
+      opacity: 0;
+    }
+
+    &-appear-done {
+      opacity: 1;
+      transition: opacity 0.4s ease-in-out;
+      -moz-transition: opacity 0.4s ease-in-out;
+      -webkit-transition: opacity 0.4s ease-in-out;
+      -o-transition: opacity 0.4s ease-in-out;
+    }
+  }
 }
